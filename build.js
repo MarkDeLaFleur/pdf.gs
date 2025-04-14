@@ -2,6 +2,7 @@ const { GasPlugin } = require('esbuild-gas-plugin')
 require('esbuild').build({
   entryPoints: ['src/index.js'],
   bundle: true,
+  minify: true,
   outfile: 'dist/index.js',
   target: 'es2017',
   plugins: [GasPlugin],
